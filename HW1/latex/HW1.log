@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.8)  9 SEP 2023 00:49
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.8)  9 SEP 2023 01:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -382,44 +382,44 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-File: ./p0.png Graphic file (type bmp)
-<./p0.png>
-File: p1.png Graphic file (type bmp)
-<p1.png>
-File: p2.png Graphic file (type bmp)
-<p2.png>
-File: p3.png Graphic file (type bmp)
-<p3.png>
-File: p4.png Graphic file (type bmp)
-<p4.png>
+File: ./image/p0.png Graphic file (type bmp)
+<./image/p0.png>
+File: image/p1.png Graphic file (type bmp)
+<image/p1.png>
+File: image/p2.png Graphic file (type bmp)
+<image/p2.png>
+File: image/p3.png Graphic file (type bmp)
+<image/p3.png>
+File: image/p4.png Graphic file (type bmp)
+<image/p4.png>
  [1
 
 ]
-File: p5.png Graphic file (type bmp)
-<p5.png>
-File: p6.png Graphic file (type bmp)
-<p6.png>
-File: p1o.png Graphic file (type bmp)
-<p1o.png>
-File: p2o.png Graphic file (type bmp)
-<p2o.png>
-File: p3o.png Graphic file (type bmp)
-<p3o.png>
+File: image/p5.png Graphic file (type bmp)
+<image/p5.png>
+File: image/p6.png Graphic file (type bmp)
+<image/p6.png>
+File: image/p1o.png Graphic file (type bmp)
+<image/p1o.png>
+File: image/p2o.png Graphic file (type bmp)
+<image/p2o.png>
+File: image/p3o.png Graphic file (type bmp)
+<image/p3o.png>
  [2]
-File: p4o.png Graphic file (type bmp)
-<p4o.png>
-File: p5o.png.png Graphic file (type bmp)
-<p5o.png.png>
-File: p6o.png Graphic file (type bmp)
-<p6o.png>
+File: image/p4o.png Graphic file (type bmp)
+<image/p4o.png>
+File: image/p5o.png.png Graphic file (type bmp)
+<image/p5o.png.png>
+File: image/p6o.png Graphic file (type bmp)
+<image/p6o.png>
 
 [3] (./HW1.aux)
 Package rerunfilecheck Info: File `HW1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10086 strings out of 476683
- 158343 string characters out of 5804048
+ 10089 strings out of 476683
+ 158970 string characters out of 5804048
  1848018 words of memory out of 5000000
  30197 multiletter control sequences out of 15000+600000
  519947 words of font info for 69 fonts, out of 8000000 for 9000
