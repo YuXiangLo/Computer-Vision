@@ -1,6 +1,6 @@
 # Computer-Vision
 ``` 
-ftp 140.112.31.83 
+ftp -p 140.112.31.83 12000
 Account: 2022cv1
 Passwd: 2022cv1
 ```
