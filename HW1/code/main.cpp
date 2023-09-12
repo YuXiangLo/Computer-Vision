@@ -28,7 +28,7 @@ int main() {
 	// Diagonally flip Lena
 	for (int i = 0; i < rows; ++i) {
 		for (int j = 0; j < cols; ++j) {
-			outputImage.at<Vec3b>(i, j) = image.at<Vec3b>(rows - i - 1, cols - j - 1);
+			outputImage.at<Vec3b>(i, j) = image.at<Vec3b>(j, i);
 		}
 	}
 
