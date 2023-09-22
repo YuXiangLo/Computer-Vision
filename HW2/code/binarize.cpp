@@ -1,21 +1,18 @@
 #include <opencv2/opencv.hpp>
-#include <opencv2/highgui/highgui.hpp>
-
-using namespace cv;
-using namespace std;
+#include <iostream>
 
 int main() {
-    Mat image = imread("lena.bmp", IMREAD_GRAYSCALE);
+    cv::Mat image = cv::imread("lena.bmp", cv::IMREAD_GRAYSCALE);
 
+    for (int y = 0, threshold_value = 128; y < image.rows; y++)
+        for (int x = 0; x < image.cols; x++){
+            uchar pixel_value = image.at<uchar>(y, x);
+            image.at<uchar>(y, x) = (pixel_value < threshold_value) ? 0 : 255;
+        }
 
-    Mat binaryImage;
-    threshold(image, binaryImage, 128, 255, THRESH_BINARY);
+    cv::imshow("Original Image", image);
+    cv::waitKey(0);
 
-    namedWindow("Display Lena", WINDOW_NORMAL);
-    imshow("Display Lena", binaryImage);
-    waitKey(0);
-    destroyAllWindows();
-
-    return 0; // Return success
+    return 0;
 }
 

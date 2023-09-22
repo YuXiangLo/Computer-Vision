@@ -8,7 +8,7 @@ using namespace std;
 int main() {
     Mat image = imread("lena.bmp", IMREAD_GRAYSCALE);
 
-    int histogram[256] = {0};
+    int histogram[256] = {};
 
     for (int row = 0; row < image.rows; ++row) {
         for (int col = 0; col < image.cols; ++col) {
