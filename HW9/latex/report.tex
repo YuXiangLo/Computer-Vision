@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for including images
+\usepackage{caption}  % For captions under images
+\usepackage[a4paper, total={8in, 12in}]{geometry}
+\usepackage{listings}
+
+
+\begin{document}
+
+\title{CV HW9}
+\author{Yu Xiang Luo}
+\date{\today}
+\maketitle
+
+\section*{Pictures}
+% Include two images side by side
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{.3\textwidth}
+        \centering
+		\fbox{\includegraphics[width=.9\linewidth]{img/roberts_lena.png}} % First image file
+        \caption*{Roberts Lena}
+    \end{minipage}%
+    \begin{minipage}{.3\textwidth}
+        \centering
+		\fbox{\includegraphics[width=.9\linewidth]{img/prewitts_lena.png}} % Second image file
+        \caption*{Prewitts Lena}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{.3\textwidth}
+        \centering
+		\fbox{\includegraphics[width=.9\linewidth]{img/sobels_lena.png}} % First image file
+        \caption*{Sobels Lena}
+    \end{minipage}%
+    \begin{minipage}{.3\textwidth}
+        \centering
+		\fbox{\includegraphics[width=.9\linewidth]{img/frei_chen_lena.png}} % Second image file
+        \caption*{Frei and Chen's Lena}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{.3\textwidth}
+        \centering
+		\fbox{\includegraphics[width=.9\linewidth]{img/kirschs_lena.png}} % First image file
+        \caption*{Kirschs Lena}
+    \end{minipage}%
+    \begin{minipage}{.3\textwidth}
+        \centering
+		\fbox{\includegraphics[width=.9\linewidth]{img/robinsons_lena.png}} % First image file
+        \caption*{Robinsons Lena}
+    \end{minipage}%
+    \begin{minipage}{.3\textwidth}
+        \centering
+		\fbox{\includegraphics[width=.9\linewidth]{img/nevatia_babu_lena.png}} % First image file
+        \caption*{Nevatia-Babu 5×5  Lena}
+    \end{minipage}%
+\end{figure}
+
+\newpage
+\section*{}
+\section*{Code details}
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+		\fbox{\includegraphics[width=.9\linewidth]{img/padding.png}} % First image file
+        \caption*{padding}
+    \end{minipage}%
+    \begin{minipage}{.5\textwidth}
+        \centering
+		\fbox{\includegraphics[width=.9\linewidth]{img/kernel.png}} % First image file
+        \caption*{apply kernel}
+    \end{minipage}%
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{.7\textwidth}
+        \centering
+		\fbox{\includegraphics[width=.9\linewidth]{img/compass.png}} % First image file
+        \caption*{compass operator}
+    \end{minipage}%
+\end{figure}
+
+\begin{itemize}
+	\centering
+	\item For Roberts, Prewitts, Sobels and Frei and Chen's, use the specified kernel to \texttt{apply\_kernel}.
+	\item For Kirschs, Robinsons, and Nevatia Babu, use the specified k-list to \texttt{compass\_operator}.
+\end{itemize}
+
+\end{document}
+
