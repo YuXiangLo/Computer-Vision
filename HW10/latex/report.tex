@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\begin{document}
+
+\title{CV HW10}
+\author{b10902037 Yu Xiang Luo}
+\date{\today}
+\maketitle
+
+\section{Method and Kernel}
+\begin{enumerate}
+	\item Laplace Mask1 \\ 
+		\begin{table}[h!]
+			\centering
+			\begin{tabular}{|c|c|c|}
+				\hline
+				& 1 & \\
+				\hline
+				1 & -4 & 1 \\
+				\hline
+				  & 1 & \\
+				  \hline
+			\end{tabular}
+		\end{table}
+	\item Laplace Mask2 \\
+		\begin{table}[h!]
+			\centering
+			\begin{tabular}{|c|c|c|}
+				\hline
+				1 & 1 & 1\\
+				\hline
+				1 & -8 & 1 \\
+				\hline
+				1  & 1 & 1\\
+				  \hline
+			\end{tabular}
+		\end{table}
+	\item Minimum Variance Laplace
+		\begin{table}[h!]
+			\centering
+			\begin{tabular}{|c|c|c|}
+				\hline
+				2 & -1 & 2\\
+				\hline
+				-1 & -4 & -1 \\
+				\hline
+				2  & -1 & 2\\
+				  \hline
+			\end{tabular}
+		\end{table}
+	\item Laplace of Gaussian
+		$$LoG()LoG(x,y) = -\frac{1}{\pi \sigma ^4} [1 - \frac{x^2 + y^2}{2 \sigma ^2}] e^{-\frac{x^2+y^2}{2 \sigma ^2}}$$
+	\item Difference of Gaussian\\
+		$$DoG(x,y, \sigma_1, \sigma_2) = G(x,y,\sigma_1) - G(x,y,\sigma_2)$$
+		$G$ is the Gaussian blurs
+
+\end{enumerate}
+
+
+\newpage
+\section{Results}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+		\fbox{\includegraphics[width=\textwidth]{./img/lm1.png}}
+        \caption{Laplace Mask 1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+		\fbox{\includegraphics[width=\textwidth]{./img/lm2.png}}
+        \caption{Laplace Mask 2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+		\fbox{\includegraphics[width=\textwidth]{./img/mvl.png}}
+        \caption{Minimum Variance Laplace}
+    \end{subfigure}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.43\textwidth}
+		\fbox{\includegraphics[width=\textwidth]{./img/log.png}}
+        \caption{Laplace of Gaussian}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.43\textwidth}
+		\fbox{\includegraphics[width=\textwidth]{./img/dog.png}}
+        \caption{Difference of Gaussian}
+    \end{subfigure}
+\end{figure}
+
+\end{document}
+
